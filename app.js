@@ -80,7 +80,7 @@ class UI {
   }
 }
 
-// Class Stora
+// Class Storage
 class Storage {
   static addToLocalStorage() {
     let todos;
