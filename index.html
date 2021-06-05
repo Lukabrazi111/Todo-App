@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Todo App</title>
+  </head>
+  <body>
+    <!-- Todo -->
+    <div class="todo">
+      <h1>Todo App</h1>
+      <div class="todo__inner">
+        <input type="text" placeholder="Enter your text" />
+        <button id="btn__submit" type="submit">Submit</button>
+        <!-- Select -->
+        <select name="todos" class="filter__todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+      </div>
+
+      <div class="todo__output">
+        <ul class="todo__list" id="todo__list"></ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  background: burlywood;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.todo h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+.todo__inner {
+  display: flex;
+}
+
+.filter__todo {
+  outline: none;
+  border: none;
+  color: tomato;
+  padding-left: 10px;
+}
+
+.todo__inner input {
+  font-size: 15px;
+}
+
+.todo__inner input,
+.todo__inner button {
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.todo__inner button {
+  cursor: pointer;
+  width: 100px;
+  font-size: 15px;
+  transition: background 0.2s ease;
+}
+
+.todo__inner button:hover {
+  background: rgb(55, 189, 84);
+}
+
+.todo__output {
+  padding-top: 40px;
+}
+
+.todo__list {
+  list-style: none;
+}
+
+.todo__items {
+  display: flex;
+  margin-bottom: 10px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.todo__items.active {
+  transform: rotate(17deg) translateY(100px);
+  opacity: 0;
+}
+
+.todo__items li {
+  background: #fff;
+  width: 100%;
+  min-width: 250px;
+  padding: 10px;
+  font-size: 18px;
+  transition: opacity 0.5s ease;
+}
+
+.todo__items li.active {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.todo__items button {
+  transition: background 0.2s ease;
+}
+
+.todo__items button:nth-child(2) {
+  background: rgb(23, 192, 17);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  min-width: 90px;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.todo__items button:nth-child(3) {
+  background: crimson;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+  min-width: 90px;
+  padding: 10px 20px;
+}
+
+.todo__items button:nth-child(3):hover {
+  background: rgb(170, 15, 46);
+}
+
+.todo__items button:nth-child(2):hover {
+  background: rgb(19, 163, 14);
+}
